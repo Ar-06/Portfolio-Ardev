@@ -3,9 +3,86 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Portfolio 🙂 </title>
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="icon" href="./images/icon.svg" type="image/icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 </head>
 <body>
+    <header>
+        <nav class="navbar">
+            <img src="./images/play.png" alt="logo de ar">
     
+            <ul class="nav-links">
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Sobre Mi</a></li>
+                <li><a href="#">Proyectos</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="inicio">
+            <h1>Bienvenido a mi Portfolio</h1>
+            <p class="text">
+                Me llamo Ernesto Montero, estoy estudiando
+                la carrera de Ingeniería de Sistemas, me gusta mucho la programación y el diseño web,
+                en este portfolio podrás ver algunos de mis proyectos y trabajos realizados.
+            </p>
+        </section>
+
+        <section id="sobre-mi">
+            <h2>Sobre Mi</h2>
+            <div class="about">
+                <img src="./images/profile.jpeg" alt="Ernesto Montero">
+                <p class="text">
+                    Hola, mi nombre es Ernesto Montero, tengo 20 años, soy de la ciudad de Ilo, Perú.
+                    Actualmente estoy estudiando la carrera de Ingeniería de Sistemas en la Universidad Nacional de Ingeniería.
+                    Me gusta mucho la programación y el diseño web, siempre estoy aprendiendo cosas nuevas y mejorando mis habilidades.
+                    En mi tiempo libre me gusta jugar videojuegos, ver series y películas, también me gusta salir a caminar y conocer nuevos lugares.
+                </p>
+            </div>
+        </section>
+
+        <section id="proyectos">
+            <h2>Proyectos</h2>
+            <article class="proyecto">
+                <h3>Proyecto 1</h3>
+                <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, tenetur ipsam quia eum perspiciatis iusto quibusdam nobis unde, dolorum quasi aut, qui quod repellendus eligendi autem mollitia eaque optio vero.</p>
+                <img src="./images/proyecto1.jpg" alt="Proyecto 1">
+            </article>
+
+            <article class="proyecto">
+                <h3>Proyecto 2</h3>
+                <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, tenetur ipsam quia eum perspiciatis iusto quibusdam nobis unde, dolorum quasi aut, qui quod repellendus eligendi autem mollitia eaque optio vero.</p>
+                <img src="./images/proyecto2.jpg" alt="Proyecto 2">
+            </article>
+
+            <article class="proyecto">
+                <h3>Proyecto 3</h3>
+                <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, tenetur ipsam quia eum perspiciatis iusto quibusdam nobis unde, dolorum quasi aut, qui quod repellendus eligendi autem mollitia eaque optio vero.</p>
+                <img src="./images/proyecto3.jpg" alt="Proyecto 3">
+            </article>
+        </section>
+
+        <section id="contacto">
+            <h2>Contacto</h2>
+            <form action="">
+                <input type="text" placeholder="Nombre" required>
+                <input type="email" placeholder="Correo" required>
+                <textarea placeholder="Mensaje" required></textarea>
+                <button>Enviar</button>
+            </form>
+        </section>
+
+    </main>
+    <footer class="footer">
+        <p>Hecho por Ernesto Montero &copy; todos los derechos reservados</p>
+        <ul class="social-links">
+            <li><a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a></li>
+            <li><a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a></li>
+            <li><a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a></li>
+        </ul>
+    </footer>
 </body>
 </html>
