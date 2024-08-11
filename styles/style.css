@@ -11,12 +11,13 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 0 20px;
-    position: sticky;
 }
 
 .navbar img {    
     width: 140px;
+    top: 0;
     padding: 16px;
+    position: fixed;
 }
 
 .nav-links {
@@ -25,9 +26,12 @@ body {
     align-items: center;
     list-style-type: none;
     flex: 1;
-    margin-right: 250px;
+    position: fixed;
     gap: 20px;
+    top: 0;
+    right: 750px;
     font-size: 1.2rem;
+
 }
 
 .nav-links li a {
@@ -59,9 +63,39 @@ body {
     border-radius: 100%;
 }
 
+#inicio {
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    font-size: larger;
+}
+
 .text {
     text-align: justify;
+    padding: 20px;
+    width: 40%;
 }
+
+.mario {
+    animation: move 0.5s infinite alternate;
+    width: 90px;    
+}
+
+@keyframes move {
+    to {
+        transform: translateY(-15px);
+    }
+
+    from {
+        transform: translateY(15px);
+    }
+}
+
 
 .footer {
     display: flex;
